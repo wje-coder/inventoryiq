@@ -1,0 +1,7 @@
+return_id,order_item_id,return_date,quantity_returned,reason
+R000011,OI0000165,2023-01-10,1,damaged_in_transit
+R000031,OI0000710,2023-01-25,1,damaged_in_transit
+R000040,OI0001127,2023-02-18,1,defective
+R001719,OI0000639,2023-01-28,1,wrong_item
+R002129,OI0001428,2023-02-19,1,defective
+R002416,OI0001007,2023-01-28,1,better_price_found

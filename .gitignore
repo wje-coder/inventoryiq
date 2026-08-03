@@ -1,3 +1,19 @@
+# Node / frontend
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.local
+.vite/
+
+# Dataset ingestion (Phase 3) - uploaded/normalized files are never committed
+backend/var/
+
+# Synthetic data generator output - regenerate via
+# `python tools/synthetic_data/generate.py`; only the small committed
+# sample under tools/synthetic_data/sample/ is tracked in git.
+tools/synthetic_data/output/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

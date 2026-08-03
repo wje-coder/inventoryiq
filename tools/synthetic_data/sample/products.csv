@@ -1,0 +1,41 @@
+product_id,sku,upc,product_name,category,brand,supplier,unit_cost,retail_price,status
+P00001,SKU-APP-00001,700832336208,SummitGoods Deluxe Jeans,Apparel,SummitGoods,Supplier AF,6.38,13.59,active
+P00002,SKU-ELE-00002,700012621964,AeroWorks Deluxe Router, Electronics ,AeroWorks,Supplier AQ,31.32,42.77,active
+P00003,SKU-TOY-00003,472646369774,CedarLabs Premium Action Figure,Toys & Games,CedarLabs,Supplier AI,65.33,104.91,active
+P00004,SKU-APP-00004,187525138707,NovaGroup Classic Cap,apparel,NovaGroup,Supplier AJ,24.74,54.74,active
+P00005,SKU-BEA-00005,517045625552,GraniteHome Compact Moisturizer,beauty,GraniteHome,Supplier AF,30.14,92.13,active
+P00006,SKU-BEA-00006,277145114059,CrestlineSupply Deluxe Sunscreen, Beauty ,CrestlineSupply,Supplier AN,10.64,26.95,active
+P00007,SKU-SPO-00007,169869415070,GraniteCo Pro Water Bottle,SPORTING GOODS,GraniteCo,Supplier AD,140.08,266.95,active
+P00008,SKU-BEA-00008,717380026649,SummitHome Premium Shampoo,beauty,SummitHome,Supplier AR,12.99,35.71,active
+P00009,SKU-GRO-00009,267974663989,SummitGroup Compact Coffee,GROCERY,SummitGroup,Supplier AE,22.55,29.76,active
+P00010,SKU-GRO-00010,112637644335,MeridianHome Compact Tea,Grocery,MeridianHome,Supplier AQ,15.31,20.14,active
+P00011,SKU-TOY-00011,894370590668,CedarSupply Classic Building Blocks,toys & games,CedarSupply,Supplier AM,62.18,118.52,active
+P00012,SKU-HOM-00012,279368618081,PioneerWorks Everyday Toaster,Home & Kitchen,PioneerWorks,Supplier AW,80.09,126.1,active
+P00013,SKU-OFF-00013,189966462838,GraniteCo Essential Pen Set,Office Supplies,GraniteCo,Supplier AJ,3.13,5.84,active
+P00014,SKU-APP-00014,680958994499,SummitGroup Premium Cap, Apparel ,SummitGroup,Supplier AF,58.79,143.4,active
+P00015,SKU-SPO-00015,371102648727,OrbitGroup Pro Tent,SPORTING GOODS,OrbitGroup,Supplier AX,145.46,238.47,active
+P00016,SKU-ELE-00016,349360964064,AeroGoods Deluxe Router,Electronics,AeroGoods,Supplier AE,243.56,333.44,active
+P00017,SKU-BEA-00017,368318078969,WillowSupply Essential Sunscreen, Beauty ,WillowSupply,Supplier AR,6.33,14.92,active
+P00018,SKU-SPO-00018,158965931802,CedarBrands Compact Backpack,Sporting Goods,CedarBrands,Supplier AL,27.92,50.13,active
+P00019,SKU-BEA-00019,405730753142,WillowGroup Pro Shampoo, Beauty ,WillowGroup,Supplier AJ,40.63,87.92,active
+P00020,SKU-APP-00020,116475613040,BluewaveCo Essential Jeans,Apparel,BluewaveCo,Supplier AR,29.37,83.22,active
+P00021,SKU-SPO-00021,389439657508,LumenCo Pro Dumbbell Set, Sporting Goods ,LumenCo,Supplier AH,41.6,70.36,active
+P00022,SKU-OFF-00022,626495033786,NovaLabs Classic Notebook,OFFICE SUPPLIES,NovaLabs,Supplier AB,10.98,17.0,discontinued
+P00023,SKU-APP-00023,736712646676,GraniteBrands Essential T-Shirt,Apparel,GraniteBrands,Supplier AB,51.82,97.54,active
+P00024,SKU-GRO-00024,363342414490,HarborWorks Deluxe Snack Mix,grocery,HarborWorks,Supplier AI,16.78,22.98,active
+P00025,SKU-TOY-00025,211652384077,AeroGroup Essential Plush Toy,Toys & Games,AeroGroup,Supplier AE,38.21,93.08,active
+P00026,SKU-TOY-00026,875427216652,GraniteLabs Premium Action Figure,toys & games,GraniteLabs,Supplier AE,13.2,25.27,active
+P00027,SKU-ELE-00027,219785403991,BluewaveSupply Classic Speaker,ELECTRONICS,BluewaveSupply,Supplier AU,273.79,401.48,active
+P00028,SKU-SPO-00028,199002427407,HarborGroup Compact Water Bottle, Sporting Goods ,HarborGroup,Supplier AX,146.35,222.77,active
+P00029,SKU-ELE-00029,875463562649,HarborSupply Pro Router, Electronics ,HarborSupply,Supplier AU,21.35,32.69,active
+P00030,SKU-APP-00030,573082460535,NovaLabs Essential Cap,APPAREL,NovaLabs,Supplier AF,9.14,26.14,discontinued
+P00031,SKU-BEA-00031,486988551875,OrbitWorks Deluxe Shampoo, Beauty ,OrbitWorks,Supplier AF,45.25,144.54,active
+P00032,SKU-HOM-00032,960420184902,CobaltBrands Premium Blender, Home & Kitchen ,CobaltBrands,Supplier AG,139.46,232.3,active
+P00033,SKU-SPO-00033,998505323632,LumenCo Premium Backpack, Sporting Goods ,LumenCo,Supplier AD,60.69,113.64,active
+P00034,SKU-SPO-00034,483450922072,VertexHome Compact Yoga Mat, Sporting Goods ,VertexHome,Supplier AP,52.36,94.04,active
+P00035,SKU-BEA-00035,579303623884,CobaltHome Classic Moisturizer,beauty,CobaltHome,Supplier AN,47.14,102.44,active
+P00036,SKU-BEA-00036,579785579472,LumenWorks Classic Lip Balm,Beauty,LumenWorks,Supplier AF,23.51,81.73,active
+P00037,SKU-SPO-00037,430283186227,VertexLabs Deluxe Yoga Mat,sporting goods,VertexLabs,Supplier AX,79.2,114.21,active
+P00038,SKU-BEA-00038,775057307204,WillowBrands Deluxe Face Mask,beauty,WillowBrands,Supplier AJ,21.91,53.54,active
+P00039,SKU-ELE-00039,334830030878,VertexGroup Pro Cable, Electronics ,VertexGroup,Supplier AQ,135.47,184.65,active
+P00040,SKU-HOM-00040,346146377317,VertexGoods Deluxe Toaster,HOME & KITCHEN,VertexGoods,Supplier AW,101.56,172.51,active
