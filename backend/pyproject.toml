@@ -17,6 +17,7 @@ dependencies = [
     "python-multipart>=0.0.12",
     "pandas>=2.2.0",
     "openpyxl>=3.1.0",
+    "numpy>=1.26.0",
 ]
 
 [project.optional-dependencies]

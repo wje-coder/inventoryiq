@@ -61,6 +61,23 @@ class Settings(BaseSettings):
     # Number of sample values captured per column for type-inference display.
     dataset_column_sample_size: int = 5
 
+    # --- Analytics ---
+    # Row count returned by ranking endpoints (top/worst products, top
+    # categories/brands) unless the caller requests fewer via `limit`.
+    analytics_top_n: int = 10
+    # |z-score| above this is flagged as a revenue/inventory/return/sales
+    # anomaly on a time-series or cross-product distribution.
+    analytics_zscore_threshold: float = 2.0
+    # A product's quantity_available is flagged "overstocked" once it
+    # exceeds this multiple of its own units_sold.
+    analytics_overstock_multiple: float = 3.0
+    # A product's quantity_available at or below this absolute count is
+    # flagged "low inventory", independent of its sales velocity.
+    analytics_low_inventory_threshold: int = 10
+    # IQR multiplier (Tukey's fences) used by price/margin outlier checks
+    # in both the data-quality engine and the anomaly engine.
+    analytics_iqr_multiplier: float = 1.5
+
     @property
     def database_url(self) -> str:
         return (

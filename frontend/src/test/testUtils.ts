@@ -1,3 +1,14 @@
+import type {
+  AnalyticsSummary,
+  AnomalyFinding,
+  CategoriesResponse,
+  DataQualityReport,
+  KPIResult,
+  ProductsResponse,
+  RegionsResponse,
+  SuppliersResponse,
+  TrendsResponse,
+} from "../api/analytics";
 import type { Role, User } from "../api/auth";
 import type { Dataset, DatasetColumn } from "../api/datasets";
 
@@ -94,6 +105,137 @@ export function makeDatasetColumn(overrides: Partial<DatasetColumn> = {}): Datas
     sample_values: ["P001", "P002"],
     mapped_business_field: null,
     created_at: new Date().toISOString(),
+    ...overrides,
+  };
+}
+
+export function makeKPIResult(overrides: Partial<KPIResult> = {}): KPIResult {
+  return {
+    kpi_name: "revenue",
+    value: 1000,
+    unit: "USD",
+    computed_at: new Date().toISOString(),
+    ...overrides,
+  };
+}
+
+export function makeAnalyticsSummary(overrides: Partial<AnalyticsSummary> = {}): AnalyticsSummary {
+  return {
+    snapshot: {
+      id: "30000000-0000-0000-0000-000000000001",
+      dataset_id: "10000000-0000-0000-0000-000000000001",
+      job_id: "40000000-0000-0000-0000-000000000001",
+      row_count: 5,
+      column_count: 10,
+      mapped_field_count: 8,
+      summary: "15 KPI(s) computed; overall data quality 90.0/100.",
+      created_at: new Date().toISOString(),
+    },
+    kpis: [makeKPIResult()],
+    data_quality_overall_score: 90,
+    channel_performance: [],
+    ...overrides,
+  };
+}
+
+export function makeDataQualityReport(
+  overrides: Partial<DataQualityReport> = {},
+): DataQualityReport {
+  return {
+    completeness_score: 95,
+    validity_score: 90,
+    consistency_score: 92,
+    uniqueness_score: 100,
+    overall_score: 94.25,
+    created_at: new Date().toISOString(),
+    findings: [],
+    ...overrides,
+  };
+}
+
+export function makeAnomalyFinding(overrides: Partial<AnomalyFinding> = {}): AnomalyFinding {
+  return {
+    anomaly_type: "Revenue spikes",
+    severity: "warning",
+    entity: "2024-06-01",
+    metric: "revenue",
+    value: 5000,
+    z_score: 3.1,
+    description: "Revenue spiked in 2024-06-01 (z-score 3.10).",
+    ...overrides,
+  };
+}
+
+export function makeTrendsResponse(overrides: Partial<TrendsResponse> = {}): TrendsResponse {
+  return {
+    dataset_id: "10000000-0000-0000-0000-000000000001",
+    granularity: "monthly",
+    points: [{ period: "2024-01-01", units_sold: 10, revenue: 100 }],
+    ...overrides,
+  };
+}
+
+export function makeProductsResponse(overrides: Partial<ProductsResponse> = {}): ProductsResponse {
+  return {
+    dataset_id: "10000000-0000-0000-0000-000000000001",
+    top_products: [{ product_id: "P1", product_name: "Widget", units_sold: 10, revenue: 100 }],
+    worst_products: [{ product_id: "P2", product_name: "Gadget", units_sold: 1, revenue: 10 }],
+    ...overrides,
+  };
+}
+
+export function makeCategoriesResponse(
+  overrides: Partial<CategoriesResponse> = {},
+): CategoriesResponse {
+  return {
+    dataset_id: "10000000-0000-0000-0000-000000000001",
+    categories: [
+      {
+        dimension: "Tools",
+        units_sold: 5,
+        revenue: 50,
+        gross_profit: 25,
+        units_returned: 1,
+        return_rate: 20,
+      },
+    ],
+    top_brands: [],
+    ...overrides,
+  };
+}
+
+export function makeSuppliersResponse(
+  overrides: Partial<SuppliersResponse> = {},
+): SuppliersResponse {
+  return {
+    dataset_id: "10000000-0000-0000-0000-000000000001",
+    suppliers: [
+      {
+        dimension: "Acme",
+        units_sold: 5,
+        revenue: 50,
+        gross_profit: 25,
+        units_returned: 1,
+        return_rate: 20,
+      },
+    ],
+    ...overrides,
+  };
+}
+
+export function makeRegionsResponse(overrides: Partial<RegionsResponse> = {}): RegionsResponse {
+  return {
+    dataset_id: "10000000-0000-0000-0000-000000000001",
+    regions: [
+      {
+        dimension: "East",
+        units_sold: 5,
+        revenue: 50,
+        gross_profit: 25,
+        units_returned: 1,
+        return_rate: 20,
+      },
+    ],
     ...overrides,
   };
 }

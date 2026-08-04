@@ -1,5 +1,9 @@
 :root {
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
   color-scheme: light dark;
 }
 
@@ -242,4 +246,110 @@ body:has(.status-card:only-child) {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* --- Analytics pages --- */
+
+.analytics-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.analytics-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.analytics-page-header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.analytics-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.kpi-card {
+  border: 1px solid rgba(127, 127, 127, 0.3);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.kpi-card-label {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.kpi-card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.chart-card svg {
+  width: 100%;
+  height: 180px;
+}
+
+.chart-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.chart-legend li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.status-badge.info {
+  background: rgba(37, 99, 235, 0.15);
+  color: #2563eb;
+}
+
+.status-badge.warning {
+  background: rgba(234, 179, 8, 0.2);
+  color: #a16207;
+}
+
+.status-badge.error {
+  background: rgba(220, 38, 38, 0.15);
+  color: #dc2626;
 }

@@ -18,6 +18,16 @@ export default tseslint.config(
     rules: {
       ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+      // Mirror tsconfig's noUnusedParameters/noUnusedLocals convention: a
+      // leading underscore marks a parameter as intentionally unused (e.g.
+      // to satisfy an interface signature, as in test/testUtils.ts's fake
+      // XMLHttpRequest). The rule itself stays enabled at "error" - this
+      // only teaches it the same naming convention TypeScript already
+      // exempts, it doesn't turn the check off.
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { args: "after-used", argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
     },
   },
 );

@@ -28,6 +28,12 @@ export function NavBar() {
       >
         Datasets
       </NavLink>
+      <NavLink
+        to="/analytics"
+        className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+      >
+        Analytics
+      </NavLink>
       <span className="nav-spacer" />
       {user && <span className="nav-user">{user.email}</span>}
       <button type="button" onClick={handleLogout} disabled={loggingOut}>

@@ -1,3 +1,12 @@
+from app.models.analytics import (
+    AnalyticsJob,
+    AnalyticsJobStatus,
+    AnalyticsSnapshot,
+    DataQualityFinding,
+    DataQualityReport,
+    KPIName,
+    KPIResult,
+)
 from app.models.dataset import (
     AuditEventType,
     BusinessField,
@@ -17,9 +26,14 @@ from app.models.dataset import (
 from app.models.user import Role, User
 
 __all__ = [
+    "AnalyticsJob",
+    "AnalyticsJobStatus",
+    "AnalyticsSnapshot",
     "AuditEventType",
     "BusinessField",
     "ColumnDataType",
+    "DataQualityFinding",
+    "DataQualityReport",
     "Dataset",
     "DatasetAuditEvent",
     "DatasetColumn",
@@ -29,6 +43,8 @@ __all__ = [
     "DatasetValidationFinding",
     "DatasetValidationRun",
     "FindingSeverity",
+    "KPIName",
+    "KPIResult",
     "Role",
     "UploadStatus",
     "User",
